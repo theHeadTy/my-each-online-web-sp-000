@@ -8,7 +8,6 @@ def my_each(words)
   else
     'This block should not be run!'
   end
-  words
 end
 
 my_each(['hi', 'hello', 'bye', 'goodbye']) { |i|  i }
