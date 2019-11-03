@@ -1,15 +1,14 @@
 def my_each(words)
-  #if block_given?
+  if block_given?
     i = 0
-    arr = []
     while i <= words.length
-      yield words.at(i)
+      yield(words.at(i))
       i += 1
-      break words if i == words.length
     end
-  #else
-  #  'This block should not run!'
-  #end
+  else
+    'This block should not be run!'
+  end
+  words
 end
 
 my_each(['hi', 'hello', 'bye', 'goodbye']) { |i|  i }
