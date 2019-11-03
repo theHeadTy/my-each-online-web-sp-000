@@ -2,7 +2,7 @@ def my_each(words)
   arr = words.empty? ? [] : words
   if block_given?
     i = 0
-    while i <= arr.length
+    while i < arr.length
       yield arr[i]
       i += 1
     end
