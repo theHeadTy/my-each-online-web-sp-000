@@ -1,4 +1,7 @@
 def my_each(words)
+  if words.empty?
+    'This block should not be run!'
+  end
   if block_given?
     i = 0
     while i <= words.length
