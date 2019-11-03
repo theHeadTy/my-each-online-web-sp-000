@@ -5,6 +5,7 @@ def my_each(words)
       yield words.at(i)
       i += 1
     end
+    words
   else
     'This block should not be run!'
   end
