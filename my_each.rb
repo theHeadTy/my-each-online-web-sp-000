@@ -11,6 +11,6 @@ def my_each(words)
   end
 end
 
-my_each(['hi', 'hello', 'bye', 'goodbye']) { |i|  puts i }
+my_each(['hi', 'hello', 'bye', 'goodbye']) { |i|  i }
 
-my_each(['arel', 'jon', 'logan', 'spencer']) { |i| puts i }
+my_each(['arel', 'jon', 'logan', 'spencer']) { |i| i }
