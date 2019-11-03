@@ -3,9 +3,10 @@ def my_each(words)
   if block_given?
     i = 0
     while i <= arr.length
-      yield words[i]
+      yield arr[i]
       i += 1
     end
+    words if arr & words
   else
     'This block should not be run!'
   end
