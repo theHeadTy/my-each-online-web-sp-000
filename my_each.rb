@@ -1,5 +1,4 @@
 def my_each(words)
-  unless 
   #if block_given?
     i = 0
     arr = []
